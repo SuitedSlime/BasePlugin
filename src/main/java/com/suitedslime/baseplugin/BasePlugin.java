@@ -31,7 +31,7 @@ import java.util.jar.Manifest;
 /**
  * The base class that the main plugin class should extend.
  *
- * @version 1.2.1
+ * @version 1.0.0
  */
 
 public abstract class BasePlugin extends JavaPlugin {
@@ -58,7 +58,7 @@ public abstract class BasePlugin extends JavaPlugin {
     protected File baseDir;
 
     /**
-     * The absolute path to the plugin's data folder.
+     * The absolute path to the plugins data folder.
      */
     protected String baseDirPath;
 
@@ -86,7 +86,7 @@ public abstract class BasePlugin extends JavaPlugin {
     /**
      * Sets up the default fields for the plugin.
      *
-     * @param createFolder If this is true then the plugin's data folder will be created if it does not exist.
+     * @param createFolder If this is true then the plugins data folder will be created if it does not exist.
      */
     public void onEnable(boolean createFolder) {
         // This prevents Maven Shade plugin from replacing the package name
